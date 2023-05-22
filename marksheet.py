@@ -143,14 +143,20 @@ def display():
     df=Label(text=t.get())
     df.pack()
     df.place(x=550,y=660)
-    # sum = int(yz)+int(ac)+int(cd)+int(fg)
-    az=Label(text="score :"+(i+n+p+s))
+
+    nk=Label(text="your total score is :")
+    nk.pack()
+    nk.place(x=50,y=700)  
+    az=Label(text= int(i.get())+int(n.get())+int(p.get())+int(s.get()))
     az.pack()
-    # az.config(text='score'+ sum)
-    az.place(x=50,y=700)
-    ay=Label(text="PERCENTAGE OBTAINED: 87.5%")
+    az.place(x=200,y=700)
+    
+    yk=Label(text="your percentage is :")
+    yk.pack()
+    yk.place(x=50,y=730)
+    ay=Label(text=(int(i.get())+int(n.get())+int(p.get())+int(s.get()))*100/400)
     ay.pack()
-    ay.place(x=50,y=730)
+    ay.place(x=200,y=730)
 
 
 
@@ -163,5 +169,3 @@ w.mainloop()
 
 
 
-#   az=Label(w,text="YOUR TOTAL SCORE: "+sum)
-#     az.pack()
